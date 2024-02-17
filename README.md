@@ -36,6 +36,7 @@ cd filament-starter
 After `.env` is configured, you can proceed to migrate & seed the database:
 
 ```sh
+php artisan session:table
 php artisan migrate:fresh --seed
 php artisan storage:link
 chmod -R 777 storage
