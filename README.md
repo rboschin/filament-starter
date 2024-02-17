@@ -37,6 +37,10 @@ After `.env` is configured, you can proceed to migrate & seed the database:
 
 ```sh
 php artisan migrate:fresh --seed
+php artisan storage:link
+chmod -R 777 storage
+chmod -R 777 bootstrap/cache/
+
 ```
 
 Once the database is seeded, you can login at `/admin` using the default admin user:
